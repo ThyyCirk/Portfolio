@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('Fonts/basteleur-master/fonts/webfonts/Basteleur-Bold.woff2') format('woff2'),
+       url('Fonts/basteleur-master/fonts/webfonts/Basteleur-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F0F0F3;
+  font-family: "MyCustomFont";
+}
+
+.TopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+span#o_meni {
+    font-size: medium;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+div#HeaderSlike {
+    width: auto;
+    height: 70px;
+    background: #F0F0F3;
+    border-radius: 5%;
+    box-shadow: 
+        -10px -10px 30px #FFFFFF,
+        10px 10px 30px rgba(174, 174, 192, 0.4),
+        inset -10px -10px 10px rgba(174, 174, 192, 0.25),
+        inset 10px 10px 10px #FFFFFF;
+}
+
+span#HeaderIme {
+    position: relative;
+    margin: 0%;
+    font-size: 100px;
+    font-family: "Poppins", sans-serif;
+    color: #fff3bc;
+    text-shadow: 
+        inset -10px -10px 30px #fffca2;
+}

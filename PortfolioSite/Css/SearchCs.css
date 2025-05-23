@@ -1,0 +1,67 @@
+div#stranice {
+    align-items: center;
+    background-image: linear-gradient(#fff3bc, #f0f0f3);
+    box-shadow: 
+        0px -20px 25px #ffeb90;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+div#stranice2 {
+    margin: 10px;
+    align-items: center;
+    background-image: linear-gradient(#f0f0f3, #d3ffa2);
+    box-shadow: 
+        0px 20px 25px #c4ff90;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.SearchBoxContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.SearchBoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.SearchBoxContainer div#stranice button {
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(#ffffff, #f0f0f3);
+    border: none;
+    overflow: hidden;
+    box-shadow: 
+        inset 0px 10px 10px #fff2cd;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.SearchBoxContainer div#stranice button:hover {
+    box-shadow: 
+        inset 10px 10px 10px #fff2cd,
+        inset 0px 15px 5px #ac9c73;
+}
+
+.SearchBoxContainer div#stranice2 button {
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(#f0f0f3, #ffffff);
+    border: none;
+    overflow: hidden;
+    box-shadow: 
+        inset 0px -10px 10px #d3ffa2;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.SearchBoxContainer div#stranice2 button:hover {
+    box-shadow: 
+        inset -10px -10px 10px #deffcd,
+        inset 0px -15px 5px #889788;
+}
