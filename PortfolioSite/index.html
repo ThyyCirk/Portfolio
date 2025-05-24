@@ -25,27 +25,27 @@
         <script src="Scripts/SearchButtons.js"></script>
         <link rel="stylesheet" href="Css/SearchCs.css">
         <div id="stranice">
-            <button>Početna</button>
-            <button>O meni</button>
+            <button onclick="HomePage()">Početna</button>
             <button onclick="priznanjaPage()">Priznanja</button>
-            <button>Kontakt</button>
+            <button onclick="contactPage()">Kontakt</button>
         </div>
         <div id="stranice2">
-            <button>Roblox projekti</button>
-            <button>Visual Studio Projekti</button>
-            <button>Unity<br>projekti</button>
+            <button onclick="projektiPage()">Roblox projekti</button>
+            <button onclick="projektiPage()">Visual Studio Projekti</button>
+            <button onclick="projektiPage()">Unity<br>projekti</button>
         </div>
     </div>
     <div class="TopRow">
         <div id="header">
             <link rel="stylesheet" href="Css/SlikaHeaderCs.css">
             <span id="HeaderIme">Luka Ćirković</span>
-            <div id="HeaderSlike"></div>
+            <div id="HeaderSlike">
+                <span id="o_meni">Ja sam Luka Ćirković, imam 16 godina i idem u <a target="_blank" href="http://ets-zemun.edu.rs">Elektrotehničku Školu "Zemun" </a>.
+                    <br>Izuzetno sam ambicozan i volim da postavljam jako teške ciljeve sebi radi poboljsanju mog znanja i umeća.
+                    <br>Volim da programiram, dizajniram i kreiram svoje svetove u raznim programima, a volim i da pravim svoje.
+                </span>
+            </div>
             <br>
-            <span id="o_meni">Ja sam Luka Ćirković, imam 16 godina i idem u <a href="http://ets-zemun.edu.rs">Elektrotehničku Školu "Zemun" </a>.
-                <br>Izuzetno sam ambicozan i volim da postavljam jako teške ciljeve sebi radi poboljsanju mog znanja i umeća.
-                <br>Volim da programiram, dizajniram i kreiram svoje svetove u raznim programima, a volim i da pravim svoje.
-            </span>
         </div>
         <div id="main">
             <table class="TableSubHeader">
@@ -82,7 +82,7 @@
                     <td class="Tablegodine"><b>3</b> godine</td>
                 </tr>
                 <tr>
-                    <td class="Tableime">- Dizajn logotipa / postera / thumbnaila<br>sa <a href="https://www.gimp.org/">GIMP</a>om</td>
+                    <td class="Tableime">- Dizajn logotipa / postera / thumbnaila<br>sa <a target="_blank" href="https://www.gimp.org/">GIMP</a>om</td>
                     <td class="Tablegodine"><b>8</b> godina</td>
                 </tr>
                 <tr>
@@ -90,11 +90,11 @@
                     <td class="Tablegodine"><b>4</b> godina</td>
                 </tr>
                 <tr>
-                    <td class="Tableime">- <a href="https://www.blender.org/">Blender</a></td>
+                    <td class="Tableime">- <a target="_blank" href="https://www.blender.org/">Blender</a></td>
                     <td class="Tablegodine"><b>3</b> meseca</td>
                 </tr>
                 <tr>
-                    <th>Zanima me / ucim:</th>
+                    <th>Zanima me / učim:</th>
                 </tr>
                 <tr>
                     <td class="Tableime">- Operativni sistemi - Linux, Windows, Mac</td>
@@ -106,8 +106,21 @@
         </div>
     </div>
     <br><br>
-    <div class="main_story">
-        <link rel="stylesheet" href="Css/main_storyCs.css">
+    <div class="Footer">
+        <br><br>
+        <span>Napravio Luka Ćirković<br>All Rights Reserved 2025</span>
+        <style>
+            .Footer span {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: small;
+                text-align: center;
+            }
+
+            .Footer {
+                padding: 5px;
+                background-image: linear-gradient(#f0f0f3, #c3c3c3);
+            }
+        </style>
     </div>
 </body>
 </html>

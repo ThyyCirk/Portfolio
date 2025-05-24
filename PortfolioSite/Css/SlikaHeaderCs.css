@@ -1,18 +1,9 @@
-@font-face {
-  font-family: 'MyCustomFont';
-  src: url('Fonts/basteleur-master/fonts/webfonts/Basteleur-Bold.woff2') format('woff2'),
-       url('Fonts/basteleur-master/fonts/webfonts/Basteleur-Bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #F0F0F3;
-  font-family: "MyCustomFont";
 }
 
 .TopRow {
@@ -31,9 +22,13 @@ span#o_meni {
 
 div#HeaderSlike {
     width: auto;
-    height: 70px;
+    height: auto;
     background: #F0F0F3;
-    border-radius: 5%;
+    /*border-radius: 5%;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     box-shadow: 
         -10px -10px 30px #FFFFFF,
         10px 10px 30px rgba(174, 174, 192, 0.4),

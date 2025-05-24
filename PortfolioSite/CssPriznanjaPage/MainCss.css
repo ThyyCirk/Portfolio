@@ -1,0 +1,19 @@
+body {
+    background-color: #f0f0f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F0F0F3;
+}
+
+.Main div#Predgovor_priz {
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    box-shadow: 
+        -10px -10px 30px #FFFFFF,
+        10px 10px 30px rgba(174, 174, 192, 0.4),
+        inset -10px -10px 10px rgba(174, 174, 192, 0.25),
+        inset 10px 10px 10px #FFFFFF;
+}
