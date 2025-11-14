@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #F0F0F3;
+  background: #f5f5ff;
 }
 
 .TopRow {
@@ -16,8 +16,9 @@ body {
 span#o_meni {
     font-size: medium;
     font-family: "Poppins", sans-serif;
-    font-weight: lighter;
+    font-weight: light;
     font-style: oblique;
+    padding-left: 10px;
 }
 
 div#HeaderSlike {
@@ -25,10 +26,10 @@ div#HeaderSlike {
     height: auto;
     background: #F0F0F3;
     /*border-radius: 5%;*/
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     box-shadow: 
         -10px -10px 30px #FFFFFF,
         10px 10px 30px rgba(174, 174, 192, 0.4),
@@ -41,7 +42,7 @@ span#HeaderIme {
     margin: 0%;
     font-size: 100px;
     font-family: "Poppins", sans-serif;
-    color: #fff3bc;
+    color: #ffeb90;
     text-shadow: 
-        inset -10px -10px 30px #fffca2;
+      0px 0px 30px #ffe469;
 }

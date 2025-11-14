@@ -40,12 +40,14 @@ div#stranice2 {
         inset 0px 10px 10px #fff2cd;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    transition: box-shadow 0.2s ease-in;
 }
 
 .SearchBoxContainer div#stranice button:hover {
     box-shadow: 
         inset 10px 10px 10px #fff2cd,
         inset 0px 15px 5px #ac9c73;
+  transition: box-shadow 0.2s ease-in;
 }
 
 .SearchBoxContainer div#stranice2 button {
@@ -58,10 +60,12 @@ div#stranice2 {
         inset 0px -10px 10px #d3ffa2;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    transition: box-shadow 0.2s ease-in;
 }
 
 .SearchBoxContainer div#stranice2 button:hover {
     box-shadow: 
         inset -10px -10px 10px #deffcd,
         inset 0px -15px 5px #889788;
+    transition: box-shadow 0.2s ease-in;
 }
