@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+    <!--FONTS-->
+
+    <link rel="stylesheet" href="Css/FadeInCs.css">
+    <link rel="stylesheet" href="Css/projektiCss/MainCss.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projekti - Portfolio LC</title>
 </head>
 <body>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('fade-in');
+        });
+    </script>
     <div class="SearchBoxContainer">
-    <script src="Scripts/SearchButtons.js"></script>
-    <link rel="stylesheet" href="Css/SearchCs.css">
-    <div id="stranice">
-        <button onclick="HomePage()">Početna</button>
-        <button onclick="priznanjaPage()">Priznanja</button>
-        <button onclick="contactPage()">Kontakt</button>
+        <script src="Scripts/SearchButtons.js"></script>
+        <link rel="stylesheet" href="Css/SearchCs.css">
+        <div id="stranice">
+            <button onclick="HomePage()">Početna</button>
+            <button onclick="priznanjaPage()">Priznanja</button>
+            <button onclick="contactPage()">Kontakt</button>
+        </div>
+        <div id="stranice2">
+            <button onclick="projektiPage()">Roblox<br>projekti</button>
+            <button onclick="projektiPage()">Visual Studio Projekti</button>
+            <button onclick="projektiPage()">Unity<br>projekti</button>
+            <button onclick="projektiPage()">Moja<br>muzika</button>
+        </div>
     </div>
-    <div id="stranice2">
-        <button onclick="projektiPage()">Roblox projekti</button>
-        <button onclick="projektiPage()">Visual Studio Projekti</button>
-        <button onclick="projektiPage()">Unity<br>projekti</button>
-        <button onclick="projektiPage()">Moja<br>muzika</button>
+    <div class="Main">
+            <div id="roblox">
+                <p>
+                    Ja sam oduvek bio faciniran kvizovima, tv produkcijom, programiranjem svetala i setova i tu skoju želju sam prikazao
+                    pravljenjem setova u robloxu.<br>
+                    Tako sam skupio preko 2000 ljudi koji vole šou program koji sam ja pravio sa 10 ljudi koje sam zaposlio da rade kao voditelji, koordinatori,
+                    producenti...<br>
+                    Ja sam kao glavni programer, kodirao, scene buildovao i pravio i skidao muziku sa popularnih kvizova kao Potera, Superpotera, Želite li postati milioner?, itd.<br>
+                    Napravio sam i dve igrice koje zajedno imaju preko 150+ hiljada pregleda i imaju aktivne igrače do danas.
+                </p>
+                <br><br>
+
+                <div class="cardHolder">
+                    <link rel="stylesheet" href="Css/CardHolder.css">
+                    <div class="card">
+                        <a href="https://www.roblox.com/games/10920021604/LP-Millionaire-Classic" id="link">LP: Millionaire Classic (ROLEPLAY)</a>
+                        <br>
+                        <img src="Slike/RobloxSetovi/millionaire.png" alt="slika nije ucitana" id="thumbnail">
+                    </div>
+
+                    <div class="card">
+                        <a href="https://www.roblox.com/games/17499974793/The-Chase-US-Roleplay" id="link">The Chase US: Roleplay</a>
+                        <br>
+                        <img src="Slike/RobloxSetovi/Screenshot 2026-06-01 200218.png" alt="slika nije ucitana" id="thumbnail">
+                    </div>
+                </div>
+
+                <p>Pored ovoga, pravio sam razne druge igrice i projekte.</p>
+
+                <div id="slikeWheel">
+                    
+                </div>
+
+            </div>
     </div>
-</div>
+    
+    <div id="Footer">
+         <br><br>
+        <span>Napravio Luka Ćirković<br>All Rights Reserved 2025</span>
+        <style>
+            #Footer span {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bolder;
+                font-size: small;
+                color: #000000;
+                text-align: center;
+            }
+
+            #Footer {
+                padding: 5px;
+                width: 10%;
+                justify-self: center;
+                background-image: linear-gradient(#f0f0f3, #c3c3c3);
+            }
+        </style>
+    </div>
 </body>
 </html>

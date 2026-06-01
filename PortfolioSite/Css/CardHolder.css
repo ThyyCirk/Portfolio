@@ -1,0 +1,36 @@
+.cardHolder {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.cardHolder .card {
+    width: 300px;
+    padding: 10px;
+    border-collapse: collapse;
+    display: block;
+    margin: 10px;
+    margin-right: 0%;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    box-shadow: 
+        -10px -10px 10px rgba(255, 255, 255, 0.7),
+        10px 10px 10px rgba(174, 174, 192, 0.2);
+    overflow: hidden;
+}
+
+.cardHolder .card #thumbnail {
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    display: block;
+
+}
+
+.cardHolder .card #link {
+    text-decoration: none;
+    text-align: center;
+}

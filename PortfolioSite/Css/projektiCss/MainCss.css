@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f0f0f3;
     display: flex;
@@ -7,9 +13,10 @@ body {
     background: #f5f5ff;
 }
 
-.Main div#Predgovor_priz {
+.Main div#roblox {
     padding: 30px;
-    width: 70%;
+    width: 90%;
+    margin: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: light;
     box-shadow: 
@@ -17,23 +24,6 @@ body {
         10px 10px 30px rgba(174, 174, 192, 0.4),
         inset -10px -10px 10px rgba(174, 174, 192, 0.25),
         inset 10px 10px 10px #FFFFFF;
-}
-
-#GalSl1 {
-    display: inline-block;   /* makes the whole div shrink to its content */
-    text-align: center;      /* optional: centers images inside if needed */
-}
-
-#GalSl1 img {
-    width: 25%;
-    display: inline-block;   /* images stay next to each other */
-}
-
-#rcztSLika {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
 
 .Main {
