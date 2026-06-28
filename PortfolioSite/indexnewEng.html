@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Luka Cirkovic</title>
+    <link rel="stylesheet" href="Css/indexCss.css">
+    <link rel="stylesheet" href="Css/indexPriznanja.css">
+    <link rel="stylesheet" href="Css/CardHolder.css">
+    <link rel="stylesheet" href="Css/ShowcaseCss.css">
+    <script src="Scripts/cardLinks.js" defer></script>
+    <script src="Scripts/ShowHideTopBar.js" defer></script>
+    <script src="Scripts/SetLang.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header id="head">
+        <div id="_topbar">
+            <p>Luka Ćirković</p>
+            <hr>
+        </div>
+
+        <div id="btns">
+            <input type="button" value="my projects" id="mmp">
+            <input type="button" value="awards" id="mpz">
+            <input type="button" value="showcase" id="msc">
+            <input type="button" value="contact" id="mkt">
+        </div>
+    </header>
+    <div class="container" id="TopDiv">
+        <span id="setlang">
+            srpski/<span class="veci_tekst">english</span>
+        </span>
+        <div id="topName">
+            <p>Luka Ćirković</p>
+            <hr>
+            <p>game developer; full stack developer; indie developer;</p>
+        </div>
+        <div id="tesktovi">
+            <p id="t1">
+                I'm <span id="godine" class="veci_tekst">17 years old</span> and I have loved programming since I was little.
+                I'm <span class="m_veci_tekst">ambitious</span> and love to set hard goals to <span class="m_veci_tekst">broaden</span> my knowledge and better my craft.
+                <br> I <span class="m_veci_tekst">play</span> the piano, I was a pupil at the music school "Kosta Manojlović".
+            </p>
+            <p id="t2">
+                Out of the 9 years I spent programming,
+                I usually focused on <span class="veci_tekst">front end development</span> <span class="emphasis_tekst">and</span> <span class="veci_tekst">game development</span>.
+                <br><br>
+                In 2019 I started coding in Lua and LuaU using the Roblox engine, with a more professional approach to Roblox development since 2022.
+                In 7th grade I was accepted to study at the "Regionalni Centar za Talente" in Zemun where I learned
+                <span class="m_veci_tekst">Visual Studio Forms,
+                    Microsoft Access and Python</span>; later also <span class="m_veci_tekst">HTML, SQL, CSS and JavaScript</span>.
+            </p>
+        </div>
+        <div id="linkovi">
+            <script src="Scripts/LinksClickEng.js" defer></script>
+            <div class="item" id="mp">
+                <img src="Slike/arrow.png" alt="">
+                <p>
+                    <span class="emphasis_tekst">my</span>
+                    <br>projects
+                </p>
+            </div>
+
+            <div class="item" id="pz">
+                <img src="Slike/arrow.png" alt="">
+                <p>
+                    <span class="emphasis_tekst">awa</span>
+                    <br>rds
+                </p>
+            </div>
+            
+            <div class="item" id="sc">
+                <img src="Slike/arrow.png" alt="">
+                <p>
+                    <span class="emphasis_tekst">show</span>
+                    <br>case
+                </p>
+            </div>
+            
+            <div class="item" id="kt">
+                <img src="Slike/arrow.png" alt="">
+                <p>
+                    <span class="emphasis_tekst">cont</span>
+                    <br>act
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="_mp">
+        <div id="goretekst">
+            <span class="veci_tekst">My projects</span>
+        </div>
+
+        <p class="naslovProjekti">roblox</p>
+        <div id="robloxPg">
+            <div id="slikeWheelRoblox">
+                <script src="Scripts/slikeWheelRoblox.js" defer></script>
+                <img src="Slike/SetoviImgsStvar/1.png" alt="nema" id="RobloxSlika">
+            </div>
+
+            <p>
+                I have always been fascinated by quizzes, TV production, lighting programming and sets, and I expressed that desire
+                by building sets in Roblox.<br>
+                This way I gathered over <span class="veci_tekst">2000 people</span> who love the show program I was creating with 10 people I hired to work as hosts, coordinators,
+                producers...<br><br>
+                As the lead programmer, I coded, built scenes and created and downloaded music from popular quizzes such as The Chase, Superchase, Who Wants to Be a Millionaire?, etc.<br>
+                I also made <span class="veci_tekst">two games</span> which together have over<br><span class="veci_tekst">150k+ visits</span> and still have active players to this day.
+            </p>
+
+            <div class="cardHolder" style="grid-template-columns: 1fr 1fr 1fr; grid-row: 3; grid-column: span 2;">
+                <div class="card">
+                    <a href="https://www.roblox.com/games/10920021604/LP-Millionaire-Classic" target="_blank" id="link">LP: Millionaire Classic (ROLEPLAY)</a>
+                    <br>
+                    <img src="Slike/RobloxSetovi/millionaire.png" alt="slika nije ucitana" id="thumbnail">
+                </div>
+
+                <div class="card">
+                    <a href="https://www.roblox.com/games/17499974793/The-Chase-US-Roleplay" target="_blank" id="link">The Chase US:<br>Roleplay</a>
+                    <br>
+                    <img src="Slike/RobloxSetovi/Screenshot 2026-06-01 200218.png" alt="slika nije ucitana" id="thumbnail">
+                </div>
+
+                <div class="card">
+                    <a href="https://www.roblox.com/games/17769981453/THE-HUB-Two-Years-Of-LP-Portal-To-The-Past" target="_blank" id="link">THE HUB | Two Years Of LP: Portal To The Past</a>
+                    <br>
+                    <img src="Slike/pttp.png" alt="slika nije ucitana" id="thumbnail">
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <p class="naslovProjekti">visual studio</p>
+        <div id="vs">
+            <p>
+                Some of the projects were made for computer science competitions. Primarily used Web Forms.<br>
+                For one project I used the MAUI .NET framework, and with a team we reached the finals of the competition.
+                Vizio and Wiregen are 3D engines made for simulation and display of objects in three-dimensional space.<br>
+                Vizio won 3rd place at the national competition.
+            </p>
+
+            <div class="cardHolder" style="grid-template-columns: 1fr 1fr 1fr;">
+                    <div class="card">
+                        <a href="DownloadFiles/vizio.pdf" target="_blank" id="link">VIZIO 3D (PDF)</a>
+                        <br>
+                        <img src="Slike/vizioslika.png" alt="slika nije ucitana" id="thumbnail">
+                    </div>
+
+                    <div class="card">
+                        <a href="DownloadFiles/wiregen.pdf" target="_blank" id="link">WIREGEN (PDF)</a>
+                        <br>
+                        <img src="Slike/wiregen.png" alt="slika nije ucitana" id="thumbnail">
+                    </div>
+
+                    <div class="card">
+                        <a href="https://github.com/Skypro009/MindwavE" target="_blank" id="link">MindwavE</a>
+                        <br>
+                        <img src="Slike/mindwave.png" alt="slika nije ucitana" id="thumbnail">
+                    </div>
+                </div>
+        </div>
+
+        <p class="naslovProjekti">unity</p>
+        <div id="unity">
+            <p>
+                I used Unity for the Campfire game jam, we won second place with my 3 team members.
+                There is also an old research paper here.
+            </p>
+            <div class="cardHolder">
+                <div class="card">
+                    <a href="DownloadFiles/plk.pdf" target="_blank" id="link">Prva Linija Koda (PDF)</a>
+                    <br>
+                    <img src="Slike/plk.png" alt="slika nije ucitana" id="thumbnail">
+                </div>
+
+                <div class="card">
+                    <a href="https://thylala.itch.io/yebetel-game-jam" target="_blank" id="link">Brufen</a>
+                    <br>
+                    <img src="Slike/OJoiGZ.png" alt="slika nije ucitana" id="thumbnail">
+                </div>
+            </div>
+        </div>
+
+        <p class="naslovProjekti">python</p>
+        <div id="python">
+            <p>
+                In 2026 I made a lightweight operating system for the M5 StickC-Plus2 device
+                using MicroPython and the UiFlow2 launcher.
+            </p>
+
+            <div class="cardHolder">
+                <div class="card">
+                    <a href="DownloadFiles/pile.pdf" target="_blank" id="link">Uređaj kao alternativa ili dodatak telefonu (PILE) (PDF)</a>
+                    <br>
+                    <img src="Slike/pile1.png" alt="slika nije ucitana" id="thumbnail">
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/ThyyLala/PILE" target="_blank" id="link">Pile (GitHub repozitorija)</a>
+                    <br>
+                    <img src="Slike/pile2.png" alt="slika nije ucitana" id="thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="font-size: 1.3em;" id="_pz">
+        <div id="goretekst">
+            <span class="veci_tekst">Awards</span>
+        </div>
+            <div id="diplome_RCZT">
+                <p>
+                    During five years of attending RCZT, I passed and placed at national competitions <b>3</b> times, while I qualified for the national competition 4 times. <br>
+                    In 7th, 8th grade of elementary and 1st and 3rd year of high school. <br>
+                    Two of those three times I received <b>special diplomas</b> for 60 points scored on the research paper presentation
+                    by a professional committee.
+                </p>
+            </div>
+        <div class="cardHolder">
+            <div class="card">
+                <a href="https://talentizemun.rs/" target="_blank" id="link">Regionalni centar za Talente</a>
+                <br>
+                <img src="Slike/RCZT.png" alt="RCZT" id="thumbnail">
+            </div>
+            <div class="card">
+                <a href="https://thylala.itch.io/yebetel-game-jam" target="_blank" id="link">Campfire Hackathon 2026</a>
+                <br>
+                <img src="Slike/brufen.jpg" alt="Brufen" id="thumbnail">
+            </div>
+        </div>
+    </div>
+
+    <div id="fadeintoShowcase"></div>
+    <div id="ShowcaseContainer">
+        <span id="showcase_goretekst">SHOWCASE</span>
+        <br><br>
+
+        <div id="muzika">
+            <p>
+                Music has always been my hobby. I have been involved with it since I was young, later I also started attending music school which I
+                attended for more than half a decade. Later, I found out about DAWs and once I learned how to use FL Studio, the sky was the limit.
+            </p>
+
+            <div class="cardHolder">
+                <div class="card">
+                    <a href="https://thyylala.bandcamp.com/album/the-gathering-ost" target="_blank" id="link">The Gathering OST</a>
+                    <br>
+                    <img src="Slike/gathering.jpg" alt="slika nije ucitana" id="thumbnail">
+                </div>
+
+                <div class="card">
+                    <a href="https://thyylala.bandcamp.com/album/did-i-react-to-chains" target="_blank" id="link">Did I React to Chains?</a>
+                    <br>
+                    <img src="Slike/chains.jpg" alt="slika nije ucitana" id="thumbnail">
+                </div>
+            </div>
+        </div>
+
+        <span class="emphasis_tekst">ROBLOX SHOWCASE</span>
+
+        <div id="ShowcaseRobloxSlike">
+            <img src="Slike/SetoviImgsStvar/1.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/2.png" alt="nema" id="RobloxSlika" 
+            style="grid-column: span 2;">
+            <img src="Slike/SetoviImgsStvar/4.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/3.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/6.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/5.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/8.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/10.png" alt="nema" id="RobloxSlika"
+            style="grid-column: span 2;">
+            <br>
+            <img src="Slike/SetoviImgsStvar/13.png" alt="nema" id="RobloxSlika"
+            style="grid-column: span 3;">
+            <img src="Slike/SetoviImgsStvar/14.png" alt="nema" id="RobloxSlika"
+            style="grid-column: span 3;">
+            <img src="Slike/SetoviImgsStvar/15.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/16.png" alt="nema" id="RobloxSlika">
+            <img src="Slike/SetoviImgsStvar/17.png" alt="nema" id="RobloxSlika"
+            style="grid-column: span 2;">
+            <img src="Slike/RobloxOstalo/2.png" alt="nema" id="RobloxSlika"
+            style="grid-column: span 1;">
+            <img src="Slike/RobloxOstalo/1.png" alt="nema" id="RobloxSlika"
+            style="grid-column: span 3;">
+            <iframe 
+                src="https://www.youtube.com/embed/aeFO9sXUv-I"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/rzCZ-H8RdDQ"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/kKvxPCsv4rg"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/M9P9UsxYsPA"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/xX7KrTUIri8"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/BCpE_BeqE_g"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/5LKKYGveNOI"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/h7aC30qzAas"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/LVfKVtiFEpU"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/6c4HA6H95Rg"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/g6rNeOh3LYI"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/M77z1zF4dvE"
+                width="560" 
+                height="315"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <div id="fadeoutShowcase"></div>
+
+    <div class="container" id="_kt" style="width: 100%; margin: 0px; border-radius: 0%; display: grid; grid-template-columns: 3; align-content: space-between; column-gap: 20vw;">
+        <span class="veci_tekst">contact</span>
+
+        <p style="text-align: left; grid-column: 1;">
+            E-Mail: <b>ThyyCirk@proton.me</b><br><br>
+
+            LinkedIn: <a href="https://www.linkedin.com/in/luka-%C4%87irkovi%C4%87-8b25533b1/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMKE%2BCouART6J3bXVtFfkdA%3D%3D" target="_blank">ovde</a><br>
+            Itch.io: <a href="https://thylala.itch.io/" target="_blank">here</a><br>
+            Instagram: <a href="https://www.instagram.com/lukaa_cirkovic?igsh=NXhzNWJ5c3Axc2x3" target="_blank">@lukaa_cirkovic</a><br>
+            GitHub: <a href="https://github.com/ThyyLala" target="_blank" rel="noopener noreferrer">here</a><br>
+            Youtube: <a href="https://www.youtube.com/channel/UCPU5fz09_KVYnJXkPm-ejlA" target="_blank" rel="noopener noreferrer">here</a>
+        </p>
+
+        <p style="grid-column: 3;">
+            2026 Luka Ćirković<br>
+            All rights reserved
+        </p>
+    </div>
+
+</body>
+</html>

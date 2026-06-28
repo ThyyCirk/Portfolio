@@ -1,0 +1,73 @@
+#robloxPg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; /* let rows size to content, not forced 1fr */
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    #robloxPg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #slikeWheelRoblox {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #robloxPg p {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #robloxPg .cardHolder {
+        grid-column: 1 !important; /* overrides inline style */
+        grid-row: 3 !important;
+    }
+
+    #RobloxSlika {
+        width: 100% !important;
+        height: 40vh !important;
+        object-fit: cover !important;
+    }
+}
+
+#slikeWheelRoblox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: auto;
+    grid-column: span 1;
+    grid-row: span 2;
+    padding: 30px;
+}
+
+#RobloxSlika {
+  width: 40vw;
+  height: 500px;
+  object-fit: cover;
+}
+
+#goretekst span {
+    font-size: 4em;
+}
+
+#robloxPg p {
+    font-size: 1.25em;
+}
+
+#vs p {
+    font-size: 1.3em;
+}
+
+#unity p {
+    font-size: 1.3em;
+}
+
+#python p {
+    font-size: 1.3em;
+}
