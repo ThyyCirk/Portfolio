@@ -4,5 +4,5 @@ setlang.addEventListener("click", function(){
     if (window.location.pathname.includes("indexnewEng"))
         window.location.href = "index"
     else
-        window.location.href = "indexnewEng"
+        window.location.href = "Eng"
 })

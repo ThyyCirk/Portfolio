@@ -10,37 +10,37 @@ let kont2 = document.querySelector("#mkt")
 let topb = document.querySelector("#_topbar")
 
 proj.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#_mp";
+    window.location.href = "Eng.html#_mp";
 })
 
 priz.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#_pz";
+    window.location.href = "Eng.html#_pz";
 })
 
 show.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#ShowcaseContainer";
+    window.location.href = "Eng.html#ShowcaseContainer";
 })
 
 kont.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#_kt";
+    window.location.href = "Eng.html#_kt";
 })
 
 proj2.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#_mp";
+    window.location.href = "Eng.html#_mp";
 })
 
 priz2.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#_pz";
+    window.location.href = "Eng.html#_pz";
 })
 
 show2.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#ShowcaseContainer";
+    window.location.href = "Eng.html#ShowcaseContainer";
 })
 
 kont2.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#_kt";
+    window.location.href = "Eng.html#_kt";
 })
 
 topb.addEventListener("click", function(){
-    window.location.href = "indexnewEng.html#TopDiv";
+    window.location.href = "Eng.html#TopDiv";
 })
