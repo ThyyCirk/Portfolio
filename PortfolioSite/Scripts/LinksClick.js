@@ -9,6 +9,28 @@ let show2 = document.querySelector("#msc")
 let kont2 = document.querySelector("#mkt")
 let topb = document.querySelector("#_topbar")
 
+let tools_text = document.querySelectorAll("p#tools")
+let awards_text = document.querySelectorAll("p#Awards")
+let link_text = document.querySelectorAll("a#link")
+
+tools_text.forEach(element => {
+    let t = "Alati: " + element.innerHTML;
+    element.innerHTML = t;
+});
+
+awards_text.forEach(element => {
+    let t = "Nagrada/Nagrade: " + element.innerHTML;
+    element.innerHTML = t;
+});
+
+link_text.forEach(element => {
+    let t = "Link: " + element.innerHTML;
+    element.innerHTML = t;
+});
+
+history.scrollRestoration = "manual";
+window.scrollTo(0, 0);
+
 console.log(proj, priz, show, kont, proj2, priz2, show2, kont2, topb)
 
 proj.addEventListener("click", function(){

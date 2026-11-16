@@ -1,45 +1,51 @@
 .cardHolder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    justify-content: center;
+    justify-content: left;
     margin: auto;
-    width: fit-content;
+    width: 100%;
+    height: fit-content;
 }
 
 .cardHolder .card {
-    width: clamp(4rem, 10vw, 20rem);
-    padding: 10px;
-    border-collapse: collapse;
-    display: block;
-    margin: 10px;   
-    margin-right: 0%;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    cursor: pointer;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 12vw 1fr;
+    grid-template-rows: auto;
+    align-items: center;   /* centers thumbnail and text vertically */
+    gap: 10px;
+    height: fit-content;
 }
 
 .cardHolder .card:hover {
-    background: linear-gradient(to bottom, #7874bb, #f5f5ff);
+    background: linear-gradient(to right, #7874bb, #f5f5ff);
 }
 
 #ShowcaseContainer .cardHolder .card:hover {
-    background: linear-gradient(to bottom, #f5f5ff, #000000);
+    background: linear-gradient(to right, #f5f5ff, #000000);
 }
 
+
 .cardHolder .card #thumbnail {
-    width: 8vw;
-    height: 5vw;
-    margin: auto;
+    grid-column: 1;
+    grid-row: 1;
+    width: 12vw;
+    height: 7vw;
     display: block;
     object-fit: cover;
 }
 
+.cardHolder .card #ps {
+    grid-column: 2;
+    grid-row: 1;
+}
+.cardHolder .card #ps * {
+    padding-bottom: 10px;
+}
+
 .cardHolder .card #link {
     text-decoration: none;
-    text-align: center;
     font-family: HaasGroteskBold;
-    margin: auto;
     color: black;
     pointer-events: none;
 }
@@ -48,9 +54,52 @@
     color: white;
 }
 
+.cardHolder .card {
+    position: relative;
+}
+
+/* Desktop: thumbnail on the left, faded photo across the whole card */
+.cardHolder .card #thumbnail {
+    position: relative;
+    z-index: 1;               /* keeps the original photo crisp above the background */
+}
+
+.cardHolder .card .cardBg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;             /* 90% transparent */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cardHolder .card #ps {
+    position: relative;
+    z-index: 1;
+}
+
 @media (max-width: 768px) {
     .cardHolder .card {
+        grid-template-columns: 1fr;
+        padding: 0;
         mask: linear-gradient(to right, black 60%, transparent 100%);
+    }
+
+    /* Small screens: the faded background replaces the thumbnail */
+    .cardHolder .card #thumbnail {
+        display: none;
+    }
+
+    .cardHolder .card .cardBg {
+        opacity: 0.2;         /* 80% transparent */
+    }
+
+    .cardHolder .card #ps {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 20px;
     }
 
     .cardHolder .card #link {
